@@ -56,10 +56,7 @@
 var dashesIndex = wordDashes.indexOf("-");
 
 function afterCheckLetter(){ 
-
-var dashIndex = wordDashes.indexOf("-")
-
-	if (dashIndex == -1){
+	if ((wordDashes.indexOf) == -1){
 		
 	function audioPlay() {
        var audio = document.getElementById("player");
