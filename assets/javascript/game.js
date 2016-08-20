@@ -71,7 +71,6 @@ var dashIndex = wordDashes.indexOf("-")
 
      }
 
-
 	audioPlay();
 
 		wordDashes.join("");
@@ -80,7 +79,6 @@ var dashIndex = wordDashes.indexOf("-")
 		document.getElementById("progress").innerHTML = "Congratulations, you've guessed the word correctly!";
 
 		initializeGame();
-
 }
 
 	if (numGuesses == 0){
@@ -137,8 +135,6 @@ for (var i = 0; i < wordGuessLetters.length; i++) {
 
 
 function initializeGame() {
-	document.getElementById("instructions").innerHTML = userName + "! " + "Press any key to get started";
-
 	wordGuess = wordBank[Math.floor(Math.random() * wordBank.length)];
 
 	wordGuessLetters = wordGuess.split("");
@@ -148,7 +144,7 @@ function initializeGame() {
 	wrongGuessArray = [];
 
 	numGuesses = 9; 
-	//document.getElementById("guess").innerHTML = "Number Of Guesses: " + numGuesses;
+	document.getElementById("guess").innerHTML = "Number Of Guesses: " + numGuesses;
 
 for (var i = 0; i < wordGuessLetters.length; i++){
 
