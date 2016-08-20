@@ -53,20 +53,14 @@
 
 		//I need a function to check if the letter that the user guesses is actually in the variable holding every letter of the word being guessed 
 
-
-
 var dashesIndex = wordDashes.indexOf("-");
 
 function afterCheckLetter(){ 
 
-dashesIndex = wordDashes.indexOf("-")
+var dashIndex = wordDashes.indexOf("-")
 
-	if (dashesIndex == -1){
-		wordDashes.join("");
-		wins++;
-		document.getElementById("win").innerHTML = "Wins " + wins;
-		document.getElementById("progress").innerHTML = "Congratulations, you've guessed the word correctly!";
-
+	if (dashIndex == -1){
+		
 	function audioPlay() {
        var audio = document.getElementById("player");
        if (audio.paused) {
@@ -76,7 +70,15 @@ dashesIndex = wordDashes.indexOf("-")
        }
 
      }
-     	audioPlay();
+
+
+	audioPlay();
+
+		wordDashes.join("");
+		wins++;
+		document.getElementById("win").innerHTML = "Wins " + wins;
+		document.getElementById("progress").innerHTML = "Congratulations, you've guessed the word correctly!";
+
 		initializeGame();
 
 }
@@ -91,8 +93,6 @@ dashesIndex = wordDashes.indexOf("-")
 }
 
 var isLetterInWord = false;
-
-
 
 
 function checkLetter(letter) {
@@ -158,7 +158,7 @@ for (var i = 0; i < wordGuessLetters.length; i++){
 
 document.getElementById("progress").innerHTML = "";	
 
-function audioPlay() {
+function audioPlay2() {
        var audio = document.getElementById("player");
        if (audio.play) {
           audio.pause();
