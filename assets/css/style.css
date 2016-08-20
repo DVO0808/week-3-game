@@ -1,0 +1,50 @@
+.jumbotron{
+	background-color: #660000 !important;
+	border-bottom: 4px solid #d39600;
+	color: #fff !important;
+	text-align: center;
+}
+.btn-primary{
+	background-color: #000 !important;
+	border: 1px dashed #d39600 !important;
+	background-image: none !important;
+}
+
+#gameArea{
+	background-color: #000 !important;
+	border: 1px dotted #fff !important;
+	text-align: center !important;
+	color: #fff !important;
+}
+
+.gameInfo{
+
+	font-size: 20px;
+	color: #fff;
+	margin-top: 32px;
+	margin-bottom: 52px;
+	padding: 10px;
+}
+
+#dashes{
+	color: #d39600;
+	font-weight: bold;
+}
+
+body{
+
+	background-image: url("../images/nice_snow.png");
+
+}
+
+img{
+	width: 500px;
+	height: 500px;
+}
+
+.pic{
+
+	width: 505px;
+	height: 505px;
+	border: 2px dotted #d39600;
+}
